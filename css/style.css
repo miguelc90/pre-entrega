@@ -1,0 +1,191 @@
+/* FONT H1 */
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap');
+
+/* FONT GLOBAL */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* BODY */
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER AND FOOTER */
+header, footer {
+    background-color: #1750a8;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1{
+    font-family: "Domine", serif;
+    font-optical-sizing: auto;
+    font-weight:600;
+    font-style: normal;
+}
+
+/* NAV-BAR */
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover{
+    text-decoration: underline black 5px;
+}
+
+/* SECCION INICIO */
+#inicio{
+    text-align: center;
+    font-size: 1.2em;
+    color: #00000d;
+    margin-top: 20px;
+    margin-bottom: 3vh;
+}
+
+#inicio img{
+    width: 80%;
+    margin-top: 15px;
+    border-radius: 20px;
+}
+
+.parrafo-justificado{
+    text-align: justify;
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+}
+
+/* SECCION CURSOS */
+#cursos{
+    padding: 20px;
+}
+
+h2{
+    text-align: center;
+}
+
+.cursos-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.curso {
+    text-align: center;
+    margin: 10px;
+}
+
+.curso img {
+    width: 300px;
+    border: 5px solid #8a003b;
+    border-radius: 8px;
+}
+
+.curso img:hover{
+    border: 5px solid #1750a8;
+}
+
+/* SECCION RESEÑAS */
+.reseñas{
+    padding: 20px;
+    background-color: #f4f4f4;
+    margin-bottom: 10px;
+}
+
+.reseñas-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+}
+
+.card{
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* SECCION CONTACTO */
+#contacto {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form textarea{
+    resize: none;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #1c761f;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer h4{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+footer ul li{
+    display: inline;
+    list-style: none;
+}
+
+.social li a{
+    text-decoration: none;
+    color: wheat;
+    margin-left: 10px;
+    font-size: 32px;
+}
+
+.social i:hover{
+    font-size: 40px;
+    color: rgb(47, 41, 41);
+}
+
+@media (max-width: 768px) {
+    .cursos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reseñas-container {
+        grid-template-columns: 1fr;
+    }
+
+    form {
+        padding: 10px;
+    }
+}
