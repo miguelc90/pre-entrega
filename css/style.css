@@ -2,17 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap');
 
 /* FONT GLOBAL */
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 /* BODY */
 body{
     margin: 0;
     padding: 0;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
 }
 
 /* HEADER AND FOOTER */
 header, footer {
-    background-color: #1750a8;
+    background-color: #515EF6;
     color: white;
     padding: 20px;
     text-align: center;
@@ -29,7 +34,6 @@ h1{
 nav ul {
     list-style: none;
     text-align: center;
-    margin-top: 10px;
 }
 
 nav ul li {
@@ -53,8 +57,7 @@ nav ul li a:hover{
     text-align: center;
     font-size: 1.2em;
     color: #00000d;
-    margin-top: 20px;
-    margin-bottom: 3vh;
+    background-color: #8B94F9;
 }
 
 #inicio img{
@@ -65,17 +68,20 @@ nav ul li a:hover{
 
 .parrafo-justificado{
     text-align: justify;
-    margin-left: 0.6rem;
-    margin-right: 0.6rem;
+    margin: 0.6rem 0.6rem 0px 0.8rem;
+    padding: 10px 0px 10px 0px;
 }
 
 /* SECCION CURSOS */
 #cursos{
     padding: 20px;
+    background-color: #9EA6FA;
 }
 
 h2{
     text-align: center;
+    margin: 0px 0px 1rem 0px;
+    padding: 0.5rem;
 }
 
 .cursos-container {
@@ -102,8 +108,7 @@ h2{
 /* SECCION RESEÑAS */
 .reseñas{
     padding: 20px;
-    background-color: #f4f4f4;
-    margin-bottom: 10px;
+    background-color: #B1B8FB;
 }
 
 .reseñas-container{
@@ -122,7 +127,7 @@ h2{
 /* SECCION CONTACTO */
 #contacto {
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: #C5CAFC;
 }
 
 form {
@@ -136,7 +141,7 @@ form input, form textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 10px;
 }
 
 form textarea{
@@ -145,10 +150,13 @@ form textarea{
 
 form button {
     padding: 10px 20px;
+    width: 50%;
+    margin-left: 25%;
+    font-size: 1rem;
     background-color: #1c761f;
     color: white;
     border: none;
-    border-radius: 10px;
+    border-radius: 20px;
     cursor: pointer;
 }
 
@@ -158,15 +166,19 @@ footer h4{
     margin-bottom: 10px;
 }
 
+footer ul{
+    margin-right: 5%;
+}
+
 footer ul li{
     display: inline;
     list-style: none;
+    margin-left: 2%;
 }
 
 .social li a{
     text-decoration: none;
     color: wheat;
-    margin-left: 10px;
     font-size: 32px;
 }
 
