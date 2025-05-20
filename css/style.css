@@ -57,7 +57,8 @@ nav ul li a:hover{
 #inicio{
     text-align: center;
     font-size: 1.2em;
-    color: #00000d;
+    color: #000000;
+    font-weight: 650;
     background-color: #8B94F9;
 }
 
@@ -70,7 +71,8 @@ nav ul li a:hover{
 .parrafo-justificado{
     text-align: justify;
     margin: 0.6rem 0.6rem 0px 0.8rem;
-    padding: 10px 0px 10px 0px;
+    padding: 20px 0px 20px 0px;
+    font-size: 1.5rem;
 }
 
 /* SECCION CURSOS */
