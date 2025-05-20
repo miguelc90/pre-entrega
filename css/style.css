@@ -34,6 +34,7 @@ h1{
 nav ul {
     list-style: none;
     text-align: center;
+
 }
 
 nav ul li {
@@ -187,17 +188,55 @@ footer ul li{
     color: rgb(47, 41, 41);
 }
 
+/* adaptación para pantallas chicas */
+
 @media (max-width: 768px) {
-    .cursos-container {
+    header, footer{
+        background-color: #0C166E;
+    }
+
+    /* NAV-BAR */
+    nav {
+        margin-right: 9%;
+    }
+
+    /* SECCION INICIO */
+    #inicio{
+        background-color: #C8CDF9;
+    }
+
+    #inicio img{
+        width: 95%;
+    }
+
+    /* SECCION CURSOS */
+    .cursos-container{
         flex-direction: column;
         align-items: center;
     }
 
-    .reseñas-container {
+    /* SECCION RESEÑAS */
+    .reseñas-container{
         grid-template-columns: 1fr;
     }
 
-    form {
+    /* SECCION CONTACTO */
+    form{
         padding: 10px;
+        margin-right: 5%;
+    }
+
+    form button{
+        width: 100%;
+        margin-left: 4%;
+    }
+
+    /* FOOTER */
+    footer ul{
+        margin-right: 14%;
+    }
+
+    footer ul li{
+        margin-left: 5%;
     }
 }
